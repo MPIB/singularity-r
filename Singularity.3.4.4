@@ -10,10 +10,10 @@ Contains R version 3.4.4.
 %post
 
 # Packages needed inside the container.
-export CONTAINER_SOFTWARE="gfortran g++ gcc"
+export CONTAINER_SOFTWARE="gfortran g++ gcc make libcurl4-gnutls-dev"
 ## Set build variables.
 # Packages needed only for the build process.
-export BUILD_SOFTWARE="wget make zlib1g-dev libbz2-dev liblzma-dev libpcre3-dev libcurl4-gnutls-dev"
+export BUILD_SOFTWARE="wget zlib1g-dev libbz2-dev liblzma-dev libpcre3-dev libcurl4-gnutls-dev"
 # Needed for downloading source.
 export R_BASE_URI="https://cran.r-project.org/src/base/R-3/"
 export R_FOLDER_NAME="R-3.4.4"

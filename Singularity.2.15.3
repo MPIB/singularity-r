@@ -10,10 +10,10 @@ Contains R version 2.15.3.
 %post
 
 # Packages needed inside the container.
-export CONTAINER_SOFTWARE="gfortran g++ gcc"
+export CONTAINER_SOFTWARE="gfortran g++ gcc make libcurl4-gnutls-dev"
 ## Set build variables.
 # Packages needed only for the build process.
-export BUILD_SOFTWARE="wget make"
+export BUILD_SOFTWARE="wget"
 # Needed for downloading source.
 export R_BASE_URI="https://cran.r-project.org/src/base/R-2/"
 export R_FOLDER_NAME="R-2.15.3"
